@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/juancgar/WebPage#readme",
   "dependencies": {
-    "firebase": "^6.3.1"
+    "express": "^4.17.1",
+    "firebase": "^6.3.1".
+    
   }
 }
