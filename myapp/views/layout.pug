@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title = title
+    meta(charset='utf-8')
+    meta(name='viewport',content='width=device-width. initial-scale=1, shrink-to-fit=no')
+    link(href='stylesheets/vendor/bootstrap/css/bootstrap.min.css',rel='stylesheet')
+    link(href='stylesheets/business-frontpage.css',rel='stylesheet')
+
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      .container
+        a.navbar-brand(href='#') Garzas Truck
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='/')
+                | Inicio
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='/nosotros') Nosotros
+            li.nav-item
+              a.nav-link(href='/servicios') Servicios
+            li.nav-item
+              a.nav-link(href='/contacto') Contacto
+            li.Login
+              a.nav-link(href='/login') Login
+
+    block content
